@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #BFCDE0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #225ca3;
+    font-weight: bold;
+    transition: color .1s;
+  }
+  
+  a:hover {
+    color: #3486eb;
+  }
+
+  nav {
+      color: #FEFCFD;
+      display: flex;
+        justify-content: space-between;
+        padding: 0 1%;
+        background-color: #000505;
+  }
+
+  nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+  }
+  nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0rem 1rem;
+    color: #FEFCFD;
+
+  }
+
+  button {
+    background-color: #000505;
+    border: 0;
+    padding: 3%;
+    color: #FEFCFD;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #3B3355;
+    color: #3B3355;
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+
+    align-items: center;
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  .login-form h3 {
+      color: #FEFCFD;
+      background-color: #000505;
+    padding: 0.5em;
+    border: 2px solid #000505;
+    margin: 0 auto;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border: 2px solid #000505;
+    padding: 0.5em;
+
+  }
+  .login-form input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .login-form label {
+    padding: 0.5rem;
+  }
+  .login-form button {
+      width: 100%;
+  }
+  .login-form a {
+      text-decoration: none;
+  }
+
+  .signup-form input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .signup-form label {
+    padding: 0.5rem;
+  }
+  .signup-form button {
+      width: 100%;
+  }
+  .signup-form a {
+      text-decoration: none;
+  }
+  .signup-form h3 {
+    color: #FEFCFD;
+    background-color: #000505;
+  padding: 0.5em;
+  border: 2px solid #000505;
+  margin: 0 auto;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border: 2px solid #000505;
+  padding: 0.5em;
+
+}
+
+  .wrapper { 
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000505;
+  }
+  
+  header h1 a {
+      color: #000505;
+    display: flex;
+    padding: 0.5rem 4rem;
+    background-color: #BFCDE0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+    flex-direction: column;  
+}
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: #fff5eb;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .new-post-form input {
+    width: 300px;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
