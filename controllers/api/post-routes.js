@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'title',
+      'blog',
       'created_at'
     ],
     include: [
@@ -42,6 +43,7 @@ router.get('/:id', (req, res) => {
     attributes: [
       'id',
       'title',
+      'blog',
       'created_at'
     ],
     include: [
@@ -76,6 +78,7 @@ router.post('/', withAuth, (req, res) => {
   // expects {title: 'Taskmaster goes public!', user_id: 1}
   Post.create({
     title: req.body.title,
+    blog: req.body.blog,
     user_id: req.session.user_id
   })
     .then(dbPostData => res.json(dbPostData))
