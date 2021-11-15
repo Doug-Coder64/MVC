@@ -88,6 +88,15 @@
   form label {
     display: block;
   }
+
+  section {
+      width: 70%;
+  }
+
+  section ul {
+      list-style: none;
+  }
+  
   .login-form h3 {
       color: #FEFCFD;
       background-color: #000505;
@@ -276,10 +285,27 @@
     opacity: .6;
   }
   
-  .new-post-form input {
-    width: 300px;
+  .new-post{
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  .new-post h2 {
+      text-align: center;
+  }
+  .new-post-form input{
+      width: 100%;
+  }
+  .new-post-form textarea {
+    width: 100%;
   }
   
+  .new-post-form button {
+      width: 100%;
+  }
+  .post-blog {
+      width: 100%;
+  }
   .edit-post-form {
     margin-bottom: 5%;
   }
